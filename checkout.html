@@ -24,8 +24,8 @@
     <!-- header -->
     <header class="py-4 shadow-sm bg-pink-100 lg:bg-white">
       <div class="container flex items-center justify-between">
-        <a href="#" class="block w-32">
-          <img src="./images/easyshop.png" class="w-ful" />
+        <a href="index.html" class="block w-32">
+          <img src="./images/easyshop.png" class="w-full" />
         </a>
 
         <!-- search -->
@@ -215,71 +215,113 @@
     </div>
     <!-- end of mobile side bar -->
 
-    <!-- login -->
-    <div class="container py-16">
-      <div class="max-w-lg mx-auto px-6 py-7 shadow rounded overflow-hidden">
-        <h2 class="text-2xl uppercase font-medium mb-1">Create An Account</h2>
-        <p class="text-gray-600 mb-6 text-sm">Register here if you don't have an account</p>
-        <form action="">
-          <div class="space-y-4">
-            <div>
-              <label class="text-gray-600 mb-2 block">Full Name <span class="text-primary">*</span></label>
-              <input type="text" class="input-box" placeholder="John Smith" />
-            </div>
-            <div>
-              <label class="text-gray-600 mb-2 block">Email Address <span class="text-primary">*</span></label>
-              <input type="email" class="input-box" placeholder="example@gmail.com" />
-            </div>
-            <div>
-              <label class="text-gray-600 mt-4 mb-2 block">Password <span class="text-primary">*</span></label>
-              <input type="password" class="input-box" placeholder="Type password" />
-            </div>
-            <div>
-              <label class="text-gray-600 mt-4 mb-2 block">Confirm Password <span class="text-primary">*</span></label>
-              <input type="password" class="input-box" placeholder="Confirm your password" />
-            </div>
-          </div>
-        </form>
-        <div class="mt-4 flex items-center justify-between">
-          <div class="flex items-center justify-center">
-            <input type="checkbox" id="remember" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-            <label for="remember" class="text-gray-600 ml-2 cursor-pointer">
-              I have read and agree to the <a href="#" class="text-primary font-medium">terms & conditions</a></label
-            >
-          </div>
-        </div>
-        <div class="mt-4">
-          <button
-            type="submit"
-            class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:text-primary hover:bg-transparent transition uppercase font-roboto font-medium"
-          >
-            Create Account
-          </button>
-        </div>
-        <div class="mt-6 flex justify-center relative">
-          <div class="absolute left-0 top-3 w-full border-b-2 border-x-gray-200"></div>
-          <div class="relative text-gray-600 uppercase px-3 bg-white z-10">Or SignUp In With</div>
-        </div>
-        <div class="mt-4 flex items-center justify-between gap-4">
-          <a
-            href="#"
-            class="w-full py-2 text-center text-white bg-blue-600 border border-blue-600 rounded hover:text-blue-600 hover:bg-transparent transition uppercase font-roboto font-medium"
-          >
-            Facebook
-          </a>
-          <a
-            href="#"
-            class="w-full py-2 text-center text-white bg-red-600 border border-red-600 rounded hover:text-red-600 hover:bg-transparent transition uppercase font-roboto font-medium"
-          >
-            Google
-          </a>
-        </div>
-        <p class="mt-4 text-gray-600 text-center">
-          Already have an account?<a href="login.html" class="text-primary capitalize ml-2">Login now</a>
-        </p>
+    <!-- breadCrum -->
+    <div class="container py-4 flex justify-between">
+      <div class="flex gap-3 items-center">
+        <a href="index.html" class="text-primary text-base">
+          <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-500">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-500 font-medium">Checkout</p>
       </div>
     </div>
-    <!-- end of login -->
+    <!-- end of breadCrum -->
+
+    <!-- Checkout wrapper -->
+    <div class="container lg:grid grid-cols-12 gap-6 items-start pt-4 pb-16">
+      <div class="col-span-8">
+        <!-- account details checkout -->
+        <div class="lg:col-span-8 shadow rounded px-6 py-6 mt-6 lg:mt-0">
+          <form action="">
+            <h3 class="text-lg font-semibold capitalize mb-4">Checkout</h3>
+            <div class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-gray-600 mb-2 block">First Name <span class="text-primary">*</span></label>
+                  <input type="text" class="input-box" />
+                </div>
+                <div>
+                  <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                  <input type="text" class="input-box" />
+                </div>
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Company Name</label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Country/Region <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Street Address <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Town/City <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Zip Code <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Phone Number <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+              <div>
+                <label class="text-gray-600 mb-2 block">Email Address <span class="text-primary">*</span></label>
+                <input type="text" class="input-box" />
+              </div>
+
+              <div class=""><form action=""></form></div>
+            </div>
+          </form>
+        </div>
+        <!-- end of account details checkout -->
+      </div>
+      <!-- Order summary -->
+      <div class="lg:col-span-4 border border-gray-300 px-4 py-4 rounded">
+        <h4 class="text-gray-800 text-lg font-semibold capitalize mb-4">Order Summary</h4>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <div>
+              <h5 class="text-gray-800 font-medium">Italian Shape Sofa</h5>
+              <p class="text-sm text-gray-400 font-medium">Size: <span class="uppercase">M</span></p>
+            </div>
+            <p class="text-sm text-gray-600">x3</p>
+            <p class="text-sm text-gray-600">$320</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-b border-gray-200 mt-1">
+          <h4 class="text-gray-800 text-lg font-semibold my-3">Subtotal</h4>
+          <h4 class="text-gray-800 text-lg font-semibold my-3">$320</h4>
+        </div>
+        <div class="flex items-center justify-between border-b border-gray-400 mt-1">
+          <h4 class="text-gray-800 text-lg font-semibold my-3">Shipping</h4>
+          <h4 class="text-gray-800 text-lg font-semibold my-3">Free</h4>
+        </div>
+        <div class="flex items-center justify-between mt-1">
+          <h4 class="text-gray-800 text-lg font-semibold my-3 uppercase">Total</h4>
+          <h4 class="text-gray-800 text-lg font-semibold my-3">$320</h4>
+        </div>
+        <div class="flex items-center mb-4 mt-2">
+          <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer w-3 h-3" />
+          <label for="agreement" class="text-gray-600 ml-3 cursor-pointer text-sm"
+            >Agree to our <span class="text-primary italic">terms & conditions</span>
+          </label>
+        </div>
+        <a
+          href="#"
+          class="block w-full py-2 text-center text-white font-medium bg-primary border border-primary rounded-md hover:bg-transparent hover:text-primary transition"
+          >Place Order
+        </a>
+      </div>
+      <!-- end of Order summary -->
+    </div>
+    <!-- end of Checkout wrapper -->
 
     <!-- footer -->
     <div class="bg-white pt-16 pb-12 border-t border-gray-100">
